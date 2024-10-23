@@ -18,11 +18,7 @@
             <div class="header d-flex
                         flex-column
                         flex-md-row justify-content-md-between">
-                <a href="{{ site.base }}/" class="">
-                    <img src="{{ site.base }}/img/00.jpg" 
-                         
-                         alt="Awesome" id="logo">
-                </a>
+
                 <ul class="nav nav-pills justify-content-center">
 
                     {% assign shorturl = page.url | replace:'.html','' | replace:'index','' %}
@@ -62,7 +58,13 @@
             {% endif %}
 
             {{ content }}
-
+            
+                <a href="{{ site.base }}/" class="">
+                    <img src="{{ site.base }}/img/00.jpg" 
+                         
+                         alt="Awesome" id="logo">
+                </a>
+            
             <div class="footer">
                 <p>
                     <a href="https://www.ln.edu.hk/sis">跨学科学院 School of Interdisciplinary Studies</a>
